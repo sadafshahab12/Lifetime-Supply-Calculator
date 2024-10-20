@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Lifetime Supply Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Lifetime Supply Calculator</h1>
+      <div class="input-box pb">
+        <input type="text" placeholder="Favourite Snacks" class="user-snacks" />
+        <div class="ages">
+          <input type="number" placeholder="Current Age" class="curr-age" />
+          <input type="number" placeholder="Maximum Age" class="max-age" />
+        </div>
+        <input type="number" placeholder="Amount Per Day" class="amount" />
+      </div>
+      <button class="btn" onclick="calculateSnacks()">Calculate</button>
+    </div>
+    <div class="snacks">
+      <img src="" class="snacks-image" alt="Snack" />
+      <p class="total-snacks"></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

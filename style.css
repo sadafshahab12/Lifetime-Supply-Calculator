@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform: translateY(25%);
+  gap: 7vmin;
+}
+.container {
+  display: flex;
+  background: linear-gradient(#74ecbe, #2e0361);
+  min-height: 30vmin;
+  width: 70vmin;
+  padding: 4vmin 8vmin;
+  box-shadow: 0 0 2vmin rgb(116, 236, 190);
+  display: flex;
+  flex-direction: column;
+  gap: 2vmin;
+  border-radius: 2vmin;
+}
+.snacks{
+  position: relative;
+  background:rgba(255, 255, 225, 0.2);
+  min-height: 30vmin;
+  width: 55vmin;
+  padding: 2vmin 4vmin;
+  box-shadow: 0 0 2vmin rgb(116, 236, 190);
+
+  gap: 2vmin;
+  border-radius: 2vmin;
+  display: none;
+}
+.snacks img{
+  height: 85%;
+  width: 100%;
+  overflow: hidden;
+}
+.container h1 {
+  font-size: 4vmin;
+  text-align: center;
+  padding-bottom: 2vmin;
+}
+.input-box{
+  display: flex;
+  flex-direction: column;
+  gap: 3vmin;
+}
+.pb{
+padding-bottom: 4vmin;
+}
+
+input {
+  /* background: transparent; */
+  background: rgba(255, 255, 225, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 0.5vmin;
+  width: 100%;
+  padding: 2vmin;
+  font-size: 3vmin;
+  padding-left: 3vmin;
+}
+::placeholder{
+  color: rgb(51, 50, 50);
+}
+.ages {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vmin;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+  font-size: 4vmin;
+  border: none;
+  outline: none;
+  border-radius: 1vmin;
+  transition: transform 0.3s ease-in, background-color 0.3s ease-in;
+  background-color: #2e0361;
+  box-shadow: 0 0 1vmin #ebe2f7, 0 0 4vmin 1vmin #550ab0;
+  color: #fff;
+  font-weight: 600;
+  padding: 3vmin 0;
+}
+button:hover {
+  background-color: #610bc9;
+}
+button:active {
+  transform: scale(0.96);
+}
+button:focus {
+  background-color: #11536d;
+}
+
+.total-snacks{
+  font-size: 3vmin;
+}
